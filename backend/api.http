@@ -1,0 +1,41 @@
+POST http://localhost:9091/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "akshitha21",
+  "password": "123456",
+  "email": "akshitha@gmail.com",
+  "name": "Akshitha"
+}
+
+###
+
+POST http://localhost:9091/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email":"akshitha@gmail.com",
+    "password": "123456"
+
+}
+
+###
+GET http://localhost:9091/get_user_and_profile
+Content-Type: application/json
+
+{
+  "token": "966d9fd881a4c5a83225424b8a24d7637350de9b430c856b004385baede75b5f"
+}
+
+###
+
+
+POST http://localhost:9091/update_profile_data
+Content-Type: application/json
+
+{
+    "token": "966d9fd881a4c5a83225424b8a24d7637350de9b430c856b004385baede75b5f",
+    "bio": "Testing Profile Update"
+
+
+}
