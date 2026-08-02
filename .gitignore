@@ -1,3 +1,6 @@
 node_modules/
 .next/
 .env
+backend/uploads/*.pdf
+backend/uploads/webcam.png
+backend/uploads/default.jpg
